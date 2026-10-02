@@ -1,10 +1,12 @@
 class Solution {
     String firstAlphabet(String s) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
-            if (i == 0 || s.charAt (i-1) == ' ' ) {
-                sb.append (s.charAt(i));
-            }
-        } return sb.toString();
+    StringBuilder result = new StringBuilder();
+    int n = s.length();
+    for (int i = 0; i < n; i++) {
+        if (i == 0 || s.charAt(i-1) == ' ') {
+            result.append (s.charAt(i));
+        }
+    } 
+     return result.toString();   
     }
-}
+};
